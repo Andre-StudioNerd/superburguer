@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Super Burguer - Hamburgueria" />
+    <meta name="author" content="Andre Luis Fernandes" />
+    <meta name="reply-to" content="deco.luisfernandes@gmail.com" />
+    <meta name="generator" content="Visual Studio Code" />
+    <meta name="language" content="pt-br" />
+    <meta name="robots" content="index,nofollow" />
+    <meta name="keywords" content="hamburguer" />
+    <link href="styles/output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link href="assets/favicon.png" rel="icon" />
+    <link href="assets/favicon.png" rel="apple-touch-icon" />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="//use.fontawesome.com/releases/v5.0.7/css/all.css"
+    />
+    <title>Super Burguer - Hamburgueria</title>
+  </head>
+  <body>
+    <!--Header-->
+    <header class="w-full h-[420px] bg-zinc-900 bg-home bg-cover bg-center">
+      <div class="w-full h-full flex flex-col justify-center items-center">
+        <img
+          src="assets/super_logo.png"
+          alt="Logo Super Burguer"
+          class="w-32 h-35 rounded-full hover:scale-110"
+        />
+        <h1 class="text-3xl mt-4 mb-2 text-white">Super Burguer</h1>
+        <span class="text-white font-medium"
+          >Rua Action Comics 01 - Kripton</span
+        >
+        <div class="bg-green-600 px-4 py-1 rounded-lg mt-4" id="date-span">
+          <span class="text-white font-medium">Ter á Dom - 19:00 as 23:00</span>
+        </div>
+      </div>
+    </header>
+    <!--End Header-->
+
+    <!--menu-->
+    <h2 class="text-2xl md:text-3xl font-bold text-center mt-9 mb-6 my-2">
+      Nosso Menu
+    </h2>
+
+    <div id="menu">
+      <main
+        class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-3 mb-16"
+      >
+        <div class="flex gap-2">
+          <img
+            src="/assets/hamb-1.png"
+            alt="Hamburguer"
+            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-200"
+          />
+          <div>
+            <p class="font-bold">Super Meet</p>
+            <p class="text-sm">
+              Pão da Casa, Maionese Verde, Hambúrguer, Queijo Muçarela, Queijo
+              Brie, Geleia de Pimenta e Rúcula.
+            </p>
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-lg">R$ 1000,00</p>
+              <button
+                class="bg-gray-900 px-5 rounded add-cart-plus-btn mt-4"
+                data-name="Super Meet"
+                data-price="1000.00"
+              >
+                <i
+                  class="fas fa-cart-plus text-lg text-white px-1 mt-2 mb-2"
+                ></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex gap-2">
+          <img
+            src="/assets/hamb-2.png"
+            alt="Hamburguer"
+            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-200"
+          />
+          <div>
+            <p class="font-bold">Meet Cosmos</p>
+            <p class="text-sm">
+              Pão e Maionese da Casa, Bacon crocante, Hambúrguer de Costela,
+              Queijo Provolone, Molho Barbecue e Cebola Roxa.
+            </p>
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-lg">R$ 2000,00</p>
+              <button
+                class="bg-gray-900 px-5 rounded add-cart-plus-btn"
+                data-name="Meet Cosmos"
+                data-price="2000.00"
+              >
+                <i
+                  class="fas fa-cart-plus text-lg text-white px-1 mt-2 mb-2"
+                ></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="flex gap-2">
+          <img
+            src="/assets/hamb-3.png"
+            alt="Hamburguer"
+            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-200"
+          />
+          <div>
+            <p class="font-bold">Smash Boy</p>
+            <p class="text-sm">
+              Pão da Casa, Molho de Tomate Le Pinguê, Hambúrguer, Catupiry e
+              Bacon crocante.
+            </p>
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-lg">R$ 3000,00</p>
+              <button
+                class="bg-gray-900 px-5 rounded add-cart-plus-btn"
+                data-name="Smash Boy"
+                data-price="3000.00"
+              >
+                <i
+                  class="fas fa-cart-plus text-lg text-white px-1 mt-2 mb-2"
+                ></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="flex gap-2">
+          <img
+            src="/assets/hamb-4.png"
+            alt="Hamburguer"
+            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-200"
+          />
+          <div>
+            <p class="font-bold">Salada Hot</p>
+            <p class="text-sm">
+              Pão da Casa, Molho de Queijo, dois Hambúrgueres, Queijo Prato,
+              Ketchup Le Pinguê e Bacon em tiras.
+            </p>
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-lg">R$ 4000,00</p>
+              <button
+                class="bg-gray-900 px-5 rounded add-cart-plus-btn"
+                data-name="Salada Hot"
+                data-price="4000.00"
+              >
+                <i
+                  class="fas fa-cart-plus text-lg text-white px-1 mt-2 mb-2"
+                ></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex gap-2">
+          <img
+            src="/assets/hamb-5.png"
+            alt="Hamburguer"
+            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-200"
+          />
+          <div>
+            <p class="font-bold">Star Meet</p>
+            <p class="text-sm">
+              Pão e Maionese da Casa, Hambúrguer de Fraldinha, Queijo Muçarela,
+              Molho de Mostarda e Rúcula.
+            </p>
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-lg">R$ 5000,00</p>
+              <button
+                class="bg-gray-900 px-5 rounded add-cart-plus-btn"
+                data-name="Star Meet"
+                data-price="5000.00"
+              >
+                <i
+                  class="fas fa-cart-plus text-lg text-white px-1 mt-2 mb-2"
+                ></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex gap-2">
+          <img
+            src="/assets/hamb-6.png"
+            alt="Hamburguer"
+            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-200"
+          />
+          <div>
+            <p class="font-bold">Planet Salada</p>
+            <p class="text-sm">
+              Pão da Casa, Molho de Tomate Le Pinguê, Hambúrguer, Queijo
+              Muçarela e Chimichurri.
+            </p>
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-lg">R$ 6000,00</p>
+              <button
+                class="bg-gray-900 px-5 rounded add-cart-plus-btn"
+                data-name="Planet Salada"
+                data-price="6000.00"
+              >
+                <i
+                  class="fas fa-cart-plus text-lg text-white px-1 mt-2 mb-2"
+                ></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex gap-2">
+          <img
+            src="/assets/hamb-7.png"
+            alt="Hamburguer"
+            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-200"
+          />
+          <div>
+            <p class="font-bold">X-Super</p>
+            <p class="text-sm">
+              Pão e Maionese da Casa, Hambúrguer de Frango empanado, Molho
+              especial e Alface.
+            </p>
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-lg">R$ 7000,00</p>
+              <button
+                class="bg-gray-900 px-5 rounded add-cart-plus-btn"
+                data-name="X-Super"
+                data-price="7000.00"
+              >
+                <i
+                  class="fas fa-cart-plus text-lg text-white px-1 mt-2 mb-2"
+                ></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex gap-2">
+          <img
+            src="/assets/hamb-8.png"
+            alt="Hamburguer"
+            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-200"
+          />
+          <div>
+            <p class="font-bold">K-Smash</p>
+            <p class="text-sm">
+              Pão da Casa, Molho de Tomate Le Pinguê, Hambúrguer coberto com os
+              queijos Muçarela, Provolone, Catupiry e Gorgonzola.
+            </p>
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-lg">R$ 8000,00</p>
+              <button
+                class="bg-gray-900 px-5 mt-3 rounded add-cart-plus-btn"
+                data-name="K-Smash"
+                data-price="8000.00"
+              >
+                <i
+                  class="fas fa-cart-plus text-lg text-white px-1 mt-2 mb-2"
+                ></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <div class="mx-auto max-w-7xl px-2 my-2">
+        <h2 class="text-2xl md:text-3xl font-bold text-center mt-9 mb-6 my-2">
+          Bebidas
+        </h2>
+      </div>
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-3 mb-16"
+        id="menu"
+      >
+        <div class="flex gap-2">
+          <img
+            src="/assets/refri-1.png"
+            alt="bebida"
+            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-200"
+          />
+          <div>
+            <p class="font-bold">Bebida1</p>
+            <p class="text-sm">
+              Coca-cola, Coca-cola ZERO, Guaraná Antarctica, Fanta UVA, Fanta
+              Laranja e Sprite (Lata).
+            </p>
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-lg">R$ 1000,00</p>
+              <button
+                class="bg-gray-900 px-5 rounded add-cart-plus-btn"
+                data-name="Bebida1"
+                data-price="1000.00"
+              >
+                <i
+                  class="fas fa-cart-plus text-lg text-white px-1 mt-2 mb-2"
+                ></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex gap-2">
+          <img
+            src="/assets/refri-2.png"
+            alt="bebida"
+            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-200"
+          />
+          <div>
+            <p class="font-bold">Bebida2</p>
+            <p class="text-sm">
+              Coca-cola, Coca-cola ZERO, Guaraná Antarctica, Fanta UVA, Fanta
+              Laranja e Sprite (Lata).
+            </p>
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-lg">R$ 2000,00</p>
+              <button
+                class="bg-gray-900 px-5 rounded add-cart-plus-btn"
+                data-name="Bebida2"
+                data-price="2000.00"
+              >
+                <i
+                  class="fas fa-cart-plus text-lg text-white px-1 mt-2 mb-2"
+                ></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--End Menu-->
+
+    <!--Modal-->
+    <div
+      class="bg-black/50 w-full h-full fixed top-0 left-0 z-[99] items-center justify-center hidden"
+      id="cart-modal"
+    >
+      <div class="bg-white p-5 rounded-md min-w-[90%] md:min-w-[600px]">
+        <h2 class="text-center font-bold text-3xl mb-2">Meu Carrinho</h2>
+        <div id="cart-items" class="flex justify-between mb-2 flex-col"></div>
+        <p class="font-bold">Total : <span id="cart-total">0.00</span></p>
+        <p class="font-bold mt-4">Endereço de entrega:</p>
+        <input
+          type="text"
+          placeholder="Digite seu endereço completo"
+          id="address"
+          class="w-full border-2 p-1 rounded my-1"
+        />
+        <p class="text-red-500 hidden" id="cart-warn">Carrinho Vazio !!</p>
+        <p class="text-red-500 hidden" id="address-warn">
+          Digite seu endereço completo
+        </p>
+        <div class="flex items-center justify-between mt-5 w-full">
+          <button id="close-modal-btn">Fechar</button>
+          <button
+            id="checkout-btn"
+            class="bg-green-500 text-white px-4 py-1 rounded"
+          >
+            Finalizar pedido
+          </button>
+        </div>
+      </div>
+    </div>
+    <!--End Modal-->
+
+    <!--Footer-->
+    <footer
+      class="w-full bg-red-500 py-2 fixed bottom-0 z-40 flex items-center justify-center"
+    >
+      <button
+        class="flex items-center gap-2 text-white font-bold"
+        id="cart-btn"
+      >
+        (<span id="cart-count">0</span>)Veja seu Carrinho
+        <i class="fas fa-cart-plus text-lg text-white"></i>
+      </button>
+    </footer>
+    <!--End Footer-->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/toastify-js"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
